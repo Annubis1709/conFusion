@@ -11,7 +11,7 @@
 }
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: #F3E5F5;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -19,14 +19,14 @@
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: #9575CD;
+    background: #BA68C8;
     color: floralwhite;
 }
 
 .address {
     font-size: 80%;
     margin: 0px;
-    color: #0f0f0f;
+    color: #E040FB;
 }
 
 body {
@@ -35,5 +35,5 @@ body {
 }
 
 .navbar-dark {
-    background-color: #512da8;
+    background-color: #4A148C;
 }
