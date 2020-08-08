@@ -3,7 +3,7 @@
     padding: 0px auto;
 }
 
-.row-conten {
+.row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
@@ -29,7 +29,7 @@
     color: #E040FB;
 }
 
-body {
+.body {
     padding: 50px 0px 0px 0px;
     z-index: 0;
 }
@@ -58,3 +58,9 @@ body {
     left: 0;
     min-height: 300px;
     }
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
