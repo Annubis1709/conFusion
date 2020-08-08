@@ -31,9 +31,12 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="login_Button" role="button">
                     <span class="fa fa-sign-in"></span> Login
                 </a>
+                <!--a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login
+                </a-->
             </span>
             </div>
         </div>
@@ -180,9 +183,13 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a type="button" class="btn btn-warning btn-sm btn-block" role="button" data-toggle="modal" data-target="#reserve_table_Modal"
-                        title="Or Call us at +852 12345678">Reserve a Table
+                    <a class="btn btn-warning btn-sm btn-block" role="button" id="reserve_Button"> 
+                        <strong>Reserve Table</strong>
                     </a> 
+                    <!--a type="button" class="btn btn-warning btn-sm btn-block" role="button" data-toggle="modal"
+                        data-target="#reserve_table_Modal">
+                        <strong>Reserve Table</strong>
+                    </a-->
                 </div>
             </div>
         </div>
@@ -327,7 +334,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <script>        
         $(document).ready(function() {
             $('#mycarousel').carousel({ interval:2000 });
             $('#carouselButton').click(function() {
@@ -343,6 +350,16 @@
                 }
             });         
         });
+        $(function () {
+            // -- LOGIN --// 
+            $('#reserve_Button').click(function () {
+                $('#reserve_table_Modal').modal('toggle');
+            });
+            // -- RESERVE TABLE --//
+            $('#login_Button').click(function () {
+                $('#loginModal').modal('toggle');
+            });
+        });        
     </script>
 </body>
 
